@@ -314,7 +314,21 @@ color: var(--on_primary);
 	margin-top: 40px; 
 }
 
+.contact{
+	text-align : center;
+	
+	margin: auto;
+	margin-top :50px;
+	margin-bottom :50px;
+}
 
+.contact h2{
+	margin : 6px;
+}
+
+.contact img{
+	margin : 20px 0px;
+}
 @media screen and (max-width: 1000px){
 	
 .header h1{
