@@ -80,7 +80,7 @@ color : white;
 	background-color : var(--secondary_color); /* For browsers that do not support gradients */
 	background-image : linear-gradient(5deg,var(--secondary_color),var(--third_color));
 	color : var(--on_primary);
-	font-size : 24px;
+	font-size : 1.6rem;
 	font-weight : 550;
 	padding-left : 30px;
 	border-bottom : 1px solid var(--first_complementary);
@@ -124,14 +124,12 @@ color: var(--on_primary);
 }
 
 
-
 .button-custom:active {
 	background-color : var(--first_complementary);
 	border-radius : 12px;
 	font-weight : 550;
 	
 }
-
 
 .profile-pic{
 	width : 320px;
@@ -140,12 +138,6 @@ color: var(--on_primary);
 	border : 3px solid var(--first_complementary);
 	box-shadow : 1px 1px 1px;
 	
-}
-
-.nav-menu{
-background-color : gray;
-font-size: 35px;
-height: 100px;
 }
 
 .first-section {
@@ -173,7 +165,6 @@ height: 100px;
 	letter-spacing : -1px;
 	font-weight : 500;
 }
-
 
 
 .language-icons-section {
@@ -212,8 +203,6 @@ height: 100px;
 
 .right-article {
 	margin : 200px 0px 30px 0px;
-	font-size : 22px;
-	
 }
 
 .footer {
@@ -221,19 +210,17 @@ height: 100px;
 	padding : 12px 0px;
 	width: 100%;
 	text-align: center;
-	font-size: 20px;
+	font-size: 1.2rem;
 	color : var(--on_secondary);
 	background-color : var(--second_bg_color);
 
 }
-
 
 .contact-information{
 	text-align : center;
 	margin-top : 32px;
 	
 }
-
 
 .screenshot{
 	max-width : 100%;
@@ -322,6 +309,8 @@ height: 100px;
 }
 
 .third-project-screenshots{
+	width: 98%; 
+	margin : auto;
 	margin-top: 40px; 
 }
 
