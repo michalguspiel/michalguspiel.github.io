@@ -53,7 +53,10 @@ body {
 }
 
 h1{
-	
+	color: var(--blue_on_secondary);
+	font-size : 3rem;
+	letter-spacing : -2px;
+	font-weight : 600;
 }
 
 h2{
@@ -107,6 +110,7 @@ color : white;
 	border-radius : 12px;
 	color: var(--on_primary);
 	font-weight : 550;
+	margin-bottom : 20px;
 }
 
 .button-custom:hover {
@@ -170,11 +174,7 @@ height: 100px;
 	font-weight : 500;
 }
 
-.techstack h2{
-	color: var(--blue_on_secondary);
-	letter-spacing : -2px;
-	font-weight : 600;
-}
+
 
 .language-icons-section {
 	padding-top : 12px;
@@ -236,12 +236,9 @@ height: 100px;
 
 
 .screenshot{
-	background-color : gray;
-	border : solid;
-	border-color : black;
-	border-width: 3px;
-	height : 500px; 
-	width : 300px;
+	max-width : 100%;
+	height : auto; 
+
 }
 
 .first-screenshot-layout{
@@ -249,13 +246,66 @@ height: 100px;
 	margin : auto;
 }
 
-.projects-styling{
-	width: 95%;
-	margin:auto;
+.first-project-desc{
+	margin-left :10px;
+	padding : 5px 50px;
+	width : 80%;
+	background-color : var(--second_complementary)
+}
+
+
+.project-desc-list {
+	
+	
+}
+.project-desc-list ul{
+	font-size : 1.5rem;
+	font-weight : 450;
+	list-style-type: none;
+	padding: 0;
+}
+
+.project-first-desc-list li {
+	padding-left : 5px;
+	border-bottom : 2px solid;
+	border-image: linear-gradient(to right, var(--primary_color) , white);
+	border-image-slice: 1;
+}
+
+.project-second-desc-list {
+	padding : 30px 0px 0px 30px;
+}
+
+.project-second-desc-list li {
+	padding-left : 5px;
+	border-bottom : 2px solid;
+	border-image: linear-gradient(to right, orange ,orange);
+	border-image-slice: 1;
 }
 
 .second-project{
 	background-color: orange;
+	padding-top: 100px;
+	padding-bottom : 120px;
+}
+
+.second-project-features{
+	background-color : var(--third_bg_color);
+	padding : 20px 30px;
+	margin-top : 150px;
+	border-radius: 0px 30px 0px 30px;
+}
+
+.second-project-techstack{
+	background-color : var(--third_bg_color);
+	padding : 20px 30px;
+	margin-top : 20px;
+	margin-left : 10px;
+	border-radius: 0px 35px 00px 00px;
+}
+
+.padding{
+	padding : 20px;
 }
 
 .second-description {
@@ -268,6 +318,11 @@ height: 100px;
 
 .third-project{
 	background-color : pink;
+	padding : 120px 0px 100px 0px;
+}
+
+.third-project-screenshots{
+	margin-top: 40px; 
 }
 
 
