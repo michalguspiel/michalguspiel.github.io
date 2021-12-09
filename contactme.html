@@ -11,16 +11,16 @@
     <title>Michal Guspiel, Mobile Developer</title>
   </head>
   <body>
-<!--HEADER -->
+   <!--HEADER -->
    <div class="header">
    	<div class="container-fluid">
 		<div class="row">
-			<div class=" col-11 offset-1  col-sm-8 offset-sm-1  col-md-5 offset-md-1 ">
+			<div class=" col-11 offset-1  col-sm-8 offset-sm-1  col-md-6 offset-md-1 col-lg-6 offset-lg-1">
 				<h1>Michal Guspiel</h1>
-				<br>
+				<div class="responsive-padding"></div>
 				<h2>Mobile Developer</h2>
 			</div>
-			<div class=" col-8 offset-4 col-sm-5 offset-sm-5 col-md-3 offset-md-2  ">
+			<div class=" col-8 offset-4 col-sm-5 offset-sm-5 col-md-3 offset-md-1  col-lg-3 offset-lg-1 ">
 				<div class="picture">
 				<img src="other_pics/profile_pic.jpg" class="rounded-circle profile-pic" alt="Responsive image">
 				</div>
@@ -33,38 +33,101 @@
   <!--- navigation -->
   <nav class="navbar navbar-expand-md  navbar-custom">
 		<ul class="nav mx-auto">	
-			<li class="nav-item-custom-current-link px-4"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item-custom px-4"><a class="nav-link" href="index.html">Home</a></li>
 			<li class="nav-item-custom px-4"><a class="nav-link" href="projects.html">Projects</a></li>
 			<li class="nav-item-custom px-4"><a class="nav-link" href="future.html">Future</a></li>
-			<li class="nav-item-custom px-4"><a class="nav-link"  href="contactme.html">Contact me</a></li>
+			<li class="nav-item-custom-current-link px-4"><a class="nav-link"  href="contactme.html">Contact me</a></li>
 		</ul>
    </nav>
-   
-   
+  <div class="container-fluid contact-bg">
+  
+	<div class="container contact">
+		<div class="padding" ></div>
+		<div class="row">
+			<div class="col-md-9 mb-md-0 mb-5">
+			<div class="row">
+				<div class="col-md-5">
+						<div class="padding" ></div>
 
-<div class ="container-fluid contact">
-	<div class="row">
-	<div class="col-md-2 offset-md-5">
-		
-		<h2>Github:</h2>
-		<a href="https://github.com/michalguspiel">
-			<img src="other_pics/git.png">
-		</a>
-		<br>
-		
-		<h2>LinkedIn:</h2>
-		<a href="https://www.linkedin.com/in/micha%C5%82-gu%C5%9Bpiel-b5b29920b/">
-			<img class="img-fluid" src="other_pics/linkedin.png">
-		</a>
-		<br>
-		<h2>Mail:</h2>
-		<a href="mailto:guspielmichal@gmail.com">
-			<img src="other_pics/gmail.png" a href="https://github.com/michalguspiel">
-		</a>
-		
+					<h2>Contact me !</h2>
+				</div>
+			</div>
+			<div class="padding" ></div>
+			<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                 
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea  id="message" name="message" rows="4" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+                    </div>
+                </div>
+              
+            </form>
+			<button class ="btn button-custom">
+				<!--  COMMENTED OUT BECAUSE I DONT KNOW HOW TO IMPLEMENT IT   <a onclick="document.getElementById('contact-form').submit();">Send</a>   -->
+				Send
+			</button>
+      
+        </div>
+      
+
+        <div class="col-md-3 text-center">
+            <ul class="mb-0">
+                <li>
+                   <h3>Github:</h3>
+					<a href="https://github.com/michalguspiel">
+						<img src="other_pics/git.png" alt="Github icon">
+					</a>
+					
+                </li>
+
+                <li>
+					<h3>LinkedIn:</h3>
+					<a href="https://www.linkedin.com/in/micha%C5%82-gu%C5%9Bpiel-b5b29920b/">
+						<img class="img-fluid" src="other_pics/linkedin.png" alt="LinkedIn icon">
+					</a>
+                </li>
+				
+                <li>
+				<h3>Mail:</h3>
+				<a href="mailto:guspielmichal@gmail.com">
+					<img src="other_pics/gmail.png" alt="Gmail icon">
+				</a>
+                </li>
+            </ul>
+        </div>
+  
+			</div>
+		</div>
 	</div>
-	</div>
-</div>
 
 
 <div class="footer">

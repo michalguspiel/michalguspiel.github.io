@@ -39,7 +39,7 @@ body {
 .header h1{
 	font-size : 7rem;
 	font-weight : 650;
-	line-height: 85%;
+	line-height: 90%;
 	letter-spacing : -3px;
 	color : var(--first_split);
 }
@@ -47,9 +47,13 @@ body {
 .header h2{
 	font-size : 5rem;
 	font-weight : 575;
-	 line-height: 85%;
+	line-height: 90%;
 	letter-spacing : -1px;
 	color : var(--first_split);
+}
+
+.responsive-padding{
+	padding : 4px 0px;
 }
 
 h1{
@@ -61,12 +65,14 @@ h1{
 
 h2{
 font-size : 3rem;
+letter-spacing : -1px;
 color : var(--blue_on_secondary);
 	
 }
 
 h3 {
 font-size : 2rem;
+letter-spacing : -0.5px;
 color : var(--blue_on_secondary);
 	
 }
@@ -115,25 +121,20 @@ color : white;
 
 .button-custom:hover {
 	background-color : var(--third_complementary);
-	border-radius : 12px;
+	color: white;
 	font-weight : 550;
-}
-
-.button-custom a:hover{
-color: var(--on_primary);
+	text-decoration: underline;
 }
 
 
 .button-custom:active {
-	background-color : var(--first_complementary);
-	border-radius : 12px;
-	font-weight : 550;
-	
+	background-color : var(--first_complementary);	
 }
 
 .profile-pic{
 	width : 320px;
 	max-width: 100%;
+	min-width : 220px;
 	height: auto;
 	border : 3px solid var(--first_complementary);
 	box-shadow : 1px 1px 1px;
@@ -196,9 +197,10 @@ color: var(--on_primary);
 	opacity : 0.6;
 	border-radius : 0px 0px 0px 0px;
 	margin-left : 0px;
-	width: 100%;
+	width: 97%;
 	max-width : 100%;
-	height : 1000px;
+	min-width : 400px;
+	height : auto;
 }
 
 .right-article {
@@ -222,10 +224,23 @@ color: var(--on_primary);
 	
 }
 
+.first-project {
+	background-color : var(--first_bg_color);
+	padding-top : 30px;
+}
+
+.first-project p {
+	line-height : 1.6; 
+}
+
 .screenshot{
 	max-width : 100%;
 	height : auto; 
+}
 
+.fcc-screenshot{
+	max-width : 100%;
+	height : auto; 
 }
 
 .first-screenshot-layout{
@@ -241,10 +256,6 @@ color: var(--on_primary);
 }
 
 
-.project-desc-list {
-	
-	
-}
 .project-desc-list ul{
 	font-size : 1.5rem;
 	font-weight : 450;
@@ -255,13 +266,22 @@ color: var(--on_primary);
 .project-first-desc-list li {
 	padding-left : 5px;
 	border-bottom : 2px solid;
-	border-image: linear-gradient(to right, var(--primary_color) , white);
+	border-image: linear-gradient(to right, var(--primary_color) , var(--first_bg_color));
+	border-image-slice: 1;
+}
+
+
+.project-second-desc-list li {
+	padding-left : 5px;
+	border-bottom : 2px solid;
+	border-image: linear-gradient(to right, var(--primary_color) , pink);
 	border-image-slice: 1;
 }
 
 .project-second-desc-list {
 	padding : 30px 0px 0px 30px;
 }
+
 
 .project-second-desc-list li {
 	padding-left : 5px;
@@ -270,29 +290,53 @@ color: var(--on_primary);
 	border-image-slice: 1;
 }
 
+
+.project-third-desc-list ul  {
+		font-size : 1.5rem;
+	font-weight : 450;
+	list-style-type: none;
+	padding: 0;
+}
+.project-third-desc-list li {
+	
+		padding-left : 5px;
+	border-bottom : 2px solid;
+	border-image: linear-gradient(to right, var(--primary_color) , pink);
+	border-image-slice: 1;
+}
+
+
 .second-project{
 	background-color: orange;
 	padding-top: 100px;
 	padding-bottom : 120px;
 }
 
+.second-project p {
+	line-height : 1.6; 
+	
+}
+
 .second-project-features{
 	background-color : var(--third_bg_color);
 	padding : 20px 30px;
-	margin-top : 150px;
+	margin-top : 10px;
 	border-radius: 0px 30px 0px 30px;
 }
 
 .second-project-techstack{
+
 	background-color : var(--third_bg_color);
 	padding : 20px 30px;
-	margin-top : 20px;
-	margin-left : 10px;
+	margin-top : 0px;
 	border-radius: 0px 35px 00px 00px;
 }
 
 .padding{
 	padding : 20px;
+}
+.bigpadding {
+	padding : 50px;
 }
 
 .second-description {
@@ -305,30 +349,111 @@ color: var(--on_primary);
 
 .third-project{
 	background-color : pink;
-	padding : 120px 0px 100px 0px;
+	padding-top :120px;
+	padding-bottom : 110px;
 }
 
-.third-project-screenshots{
-	width: 98%; 
-	margin : auto;
-	margin-top: 40px; 
+.third-project p {
+	line-height : 1.6; 
+	
+}
+
+.contact-bg{
+	background-color : var(--first_bg_color);
 }
 
 .contact{
 	text-align : center;
-	
 	margin: auto;
-	margin-top :50px;
-	margin-bottom :50px;
-}
-
-.contact h2{
-	margin : 6px;
+	padding-top :50px;
+	padding-bottom :50px;
+	border-radius : 8px;
 }
 
 .contact img{
 	margin : 20px 0px;
 }
+
+.contact ul{
+	list-style-type: none;
+	padding : 0;
+}
+
+.future {
+	overflow-x:hidden;
+	background-color : var(--second_bg_color);
+}
+
+.future-first-image-background{
+	padding : 20px 0px 50px 50px;
+	background-color : var(--second_complementary);
+	margin-left : 150px;
+	margin-right : -90px;
+}
+
+.future-first-image{
+	opacity : 0.8;
+	width: 95%;
+	max-width : 100%;
+	min-width : 500px;
+	height : auto;
+}
+.future-texts-section{
+	padding-top : 90px;
+}
+
+.future-second-image-background {
+		background-color : var(--first_complementary);
+		margin-left : -100px;
+		padding : 60px 30px 0px 0px;
+}
+
+.future-second-image{
+	opacity : 0.7;	
+	width: 95%;
+	max-width : 100%;
+	height : auto;
+}
+
+.future-third-image-background{
+	background-color : var(--third_complementary);
+	margin-right : -150px;
+	margin-left : 150px;
+	padding : 50px 0px 0px 40px;
+}
+
+
+.future-third-image{
+	opacity : 0.6;
+	width: 95%;
+	max-width : 100%;
+	min-width : 500px;
+	height : auto;
+}
+
+.future-responsive-padding{
+	padding: 50px 0px;
+}
+
+@media screen and (max-width: 1540px){
+	
+.responsive-padding {
+	padding: 10px 0px;
+}
+}
+
+@media screen and (max-width: 1300px){
+	.right-article{
+	margin : 20px 0px 0px 0px;
+}
+
+.future-responsive-padding{
+	padding: 15px 0px;
+}
+
+}
+
+
 @media screen and (max-width: 1000px){
 	
 .header h1{
@@ -339,6 +464,13 @@ color: var(--on_primary);
 font-size : 4rem;
 }
 
+.future-texts-section{
+	padding-top : 20px;
+}
+
+.responsive-padding {
+	padding: 5px 0px;
+}
 
 }
 
@@ -352,6 +484,21 @@ font-size : 4rem;
 font-size : 2rem;
 }
 
+.future-texts-section{
+	padding-top : 0px;
+}
+
+.responsive-padding {
+	padding: 3px 0px;
+}
+
+.profile-pic{
+	margin-top : 10px;
+}
+
+.future-responsive-padding{
+	padding: 10px 0px;
+}
 
 }
 
@@ -364,6 +511,15 @@ font-size : 2rem;
 	font-size : 2rem;
 }
 
+.future-first-image{
+margin-left: 70px;
+}
+
+.future-first-image-background{
+	
+	margin-left: 50px;
+	
+}
 
 }
 

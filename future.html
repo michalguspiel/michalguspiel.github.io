@@ -11,16 +11,16 @@
     <title>Michal Guspiel, Mobile Developer</title>
   </head>
   <body>
- <!--HEADER -->
+   <!--HEADER -->
    <div class="header">
    	<div class="container-fluid">
 		<div class="row">
-			<div class=" col-11 offset-1  col-sm-8 offset-sm-1  col-md-5 offset-md-1 ">
+			<div class=" col-11 offset-1  col-sm-8 offset-sm-1  col-md-6 offset-md-1 col-lg-6 offset-lg-1">
 				<h1>Michal Guspiel</h1>
-				<br>
+				<div class="responsive-padding"></div>
 				<h2>Mobile Developer</h2>
 			</div>
-			<div class=" col-8 offset-4 col-sm-5 offset-sm-5 col-md-3 offset-md-2  ">
+			<div class=" col-8 offset-4 col-sm-5 offset-sm-5 col-md-3 offset-md-1  col-lg-3 offset-lg-1 ">
 				<div class="picture">
 				<img src="other_pics/profile_pic.jpg" class="rounded-circle profile-pic" alt="Responsive image">
 				</div>
@@ -35,197 +35,99 @@
 		<ul class="nav mx-auto">		
 			<li class=" nav-item-custom px-4"><a class="nav-link" href="index.html">Home</a></li>
 			<li class=" nav-item-custom px-4"><a class="nav-link" href="projects.html">Projects</a></li>
-			<li class=" nav-item-custom-current-link  px-4"><a class="nav-link" href="future.html">Future</a></li>
+			<li class=" nav-item-custom-current-link px-4"><a class="nav-link" href="future.html">Future</a></li>
 			<li class=" nav-item-custom px-4"><a class="nav-link"  href="contactme.html">Contact me</a></li>
 		</ul>
    </nav>
 
 	<!--- FIRST SECTION -->
-	<div class="container-fluid">
-		<div class="mt-4"></div>
+	<div class="container-fluid future">
+		<div class="future-responsive-padding"></div>
 		<div class="row">
-			<div class="col-md-4 offset-md-1">
-				<h1>Quizanga</h1>
+		
+			<div class="col-md-3 offset-md-2 future-texts-section">
+			<div class="future-responsive-padding"></div>
+		
+				<h1>Closest future</h1>
+				
 				<p>
-				Quizanga is simple trivia/quiz app. App provides question for each turn as well as keeps track of participants points and add points to the player
-				if question was answered correctly and remove points if the answer was wrong.
+				<br>
+				I am a dreamer and I love to make wonderful, too optimistic plans for my future, however I must gather all of my focus on the most important target for now.
 				<br>
 				<br>
-				I came up with this project because I wanted to implement API calls for the first time as well as I wanted to do more testable app,
-				my first approach in making this app was TDD although it didn't worked out very well so I just tried to make as much test coverage as possible.
+				My most important target for the closest future is to become a mobile application developer and work with native development for Android OS. 
 				</p>
 			</div>
-			<div class="col-md-3 offset-md-2 project-desc-list project-first-desc-list">
-				<h2>Techstack</h2>
-				<p>
-					<ul>
-					<li>MVVM</li>	
-					<li>ROOM</li>	
-					<li>RETROFIT</li>	
-					</ul>
-				<p>
-				<h3>Features</h3>
-					<ul>
-					<li>Quiz game with multiple players offline</li>	
-					<li>Games history</li>		
-					</ul>
+			<div class="col-md-7 offset-md-0">
+				<div class="padding"></div>
+				<div class="future-first-image-background">
+					<img src="other_pics/coding_v2.jpg" alt="Coding" class="future-first-image"/>
+				</div>
 			</div>
 			
 		</div>
-		<div class="mt-3"></div>
-		<div class="row first-screenshot-layout">
-			<div class="col-md-3">
-					<img class="screenshot" src="quizanga/quizanga_02.png">
-			</div>
-			<div class="col-md-3">
-					<img  class="screenshot" src="quizanga/quizanga_01.png">
-			</div>
-			<div class="col-md-3">
-					<img  class="screenshot" src="quizanga/quizanga_03.png">
-			</div>
-			<div class="col-md-3">
-					<img  class="screenshot" src="quizanga/quizanga_04.png">
-			</div>
-		</div>
-	</div>
-
-		<div class="mt-5"></div>
-		<div class="mt-5"></div>
-
-	<div class="container-fluid second-project">
-		<div class="row projects-styling">
-			<div class="mt-5"></div>
-			<div class="col-md-7">
-				<div class="row">
-					<div class="col-md">			
-						<img  class="screenshot" src="fcc/fcc_01.png">
-						<div class="mt-3"></div>
-						<img  class="screenshot" src="fcc/fcc_02.png">
-					</div>
-					<div class="col-md">			
-						<img  class="screenshot" src="fcc/fcc_03.png">
-						<div class="mt-3"></div>
-						<img  class="screenshot" src="fcc/fcc_04.png">
-					</div>
-					<div class="col-md">			
-						<img  class="screenshot" src="fcc/fcc_05.png">
-						<div class="second-project-techstack project-desc-list project-second-desc-list">
-							<h2>Techstack</h3>
-							<p>
-								<ul>
-									<li>MVVM architecture</li>
-									<li>Admob</li>
-									<li>Room database</li>
-									<li>Shared preferences</li>
-									<li>Fragments</li>
-									<li>Dialog fragments</li>
-									<li>Recycler Views</li>
-									<li>List Views</li>
-									<li>Google Drive API</li>
-									<li>Rx Java / Rx Kotlin</li>
-								</ul>
-							</p>
-						</div>
-						<div class="mt-5"></div>
-						<div class="mt-3"></div>
-					</div>
-				</div>
-			</div>
-			<div class="padding"></div>
-			<div class="col-md-4">
-				<h1>Food Cost Calculator</h1>
-				<p>
-				Ultimate food cost calculator for chefs, freelancing caterers or anyone who need to calculate real cost of their dishes.
-				<br><br>
-				User needs to input products information with their data(price, waste percent, tax), based on those products user can make dishes or half products which can be used in dishes.
-				<br><br>
-				Half products are ingredients that contain another ingredients, let's say we use in our restaurant same marinated shrimp in two different dishes eg.
-				Shrimp marinated in soy sauce, sesame oil, chilli and garlic. We can create our half product as Marinated shrimp input all of ingredients for it and then re-use it in dishes to calculate food cost .
-				<br><br>
-				App supports metric and basic US system units.
-				</p>
-				
-				<div class="second-project-features project-desc-list project-second-desc-list">
-					<h3>Features</h3>
-					<ul>
-						<li>Ads</li>	
-						<li>Creating dishes</li>	
-						<li>Creating half products</li>		
-						<li>Calculating prices</li>		
-						<li>Presenting multiple dishes data</li>		
-						<li>Database online backup save</li>		
-						<li>Database online backup load</li>		
-						</ul>
-				</div>
-		</div>
-		<div class="mt-5"></div>
-		</div>
-	</div>
 	
-	<div class="container-fluid third-project ">
+		<div class="bigpadding"></div>
+			
 		<div class="row">
-			<div class="col-md-4 offset-md-1">
-				<h1>Bakery App</h1>
-				<p>
-					My first firebase project, staying focused on learning new things and using skills I have already learnt.
-					<br><br>
-					So far app allows user to sign up(with google, facebook or email address ) order a bake good, pay for it (or not), follow his orders, check orders history,
-					check shopping cart. I look at this project as a template in case I'd need to build a commerce app like shop, barber studio app where customers can book services or anything else.
-					
-					<br><br>
-					I am very happy with the functionality of the app!
-				</p>
-			</div>  
-			<div class="col-md-2 offset-md-1 project-desc-list project-first-desc-list">
-				<p>
-				<h2>Techstack</h2>
-				<ul>	
-				   <li>Firebase( auth, Firestore, storage)</li>	
-				   <li>Stripe</li>	
-				   <li>Glide</li>	
-				   <li>MVVM pattern</li>	
-				   <li>Google authentication</li>	
-				   <li>Facebook authetication</li>	
-				   <li>Android Image Cropper - ArthurHub</li>	
-				   <li>Email Sign up and sign in</li>	
-				</ul>
-				</p>
+			<div class="col-lg-6 col-md-6 order-2  order-sm-2 order-md-1 ">
+				<div class="future-second-image-background">
+					<img src="other_pics/coding.jpg" alt="Coding" class="future-second-image"/>
 				</div>
-			<div class="col-md-2 offset-md-1 project-desc-list project-first-desc-list">
+			</div>
+			
+			<div class="padding"></div>
+			
+			<div class="col-lg-4 offset-lg-1 col-md-5 offset-md-0 order-first order-sm-1 order-md-2  future-texts-section">
+						<div class="future-responsive-padding"></div>
+
+				<h1>Further plans</h1>
+				<br>
+				<h3>Learning Flutter</h3>
 				<p>
-				<h2>Features</h2>
-				<ul>
-					<li>Authentication</li>	
-					<li>Online Database, FIREBASE</li>		
-					<li>Online payment, STRIPE</li>		
-					<li>Placed orders list</li>		
-					<li>Placed orders history</li>		
-					<li>Presentation of store</li>		
-					<li>Calendar - with real time updates</li>		
-					<li>Admin account</li>		
-					<li>Cropping image</li>		
-				</ul>
+				Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, Mac, Windows, Google Fuchsia and the web from a single codebase.
+				<br>
+				<br>
+				It is a very interesting technology worth learning. Strong knowledge of Android development as well as Kotlin would be very helpful because it is developed by Google and Flutter apps are written in Dart which is really similar to Kotlin.
+				
+				</p>
+				<br>
+				<h3>Or React Native</h3>
+				<p>
+				React Native is a JavaScript framework for writing real, natively rendering mobile applications for iOS and Android. It’s based on React, Facebook’s JavaScript library for building user interfaces, but instead of targeting the browser, it targets mobile platforms.
+				<br><br>
+				Knowledge of React Native is really beneficial for a mobile developer since a lot of cross platform apps are built with this framework.
+				</p>
 			</div>
 		</div>
-		<div class="row third-project-screenshots">
-			<div class="col-md">			
-					<img  class="screenshot" src="cakeapp/cake_01.png">
+	<div class="bigpadding"></div>
+		<div class="row">
+	
+			<div class="col-md-3 offset-md-2 future-texts-section">
+			<div class="future-responsive-padding"></div>
+		
+				<h1>Billion Dollar Idea</h1>
+				<br>
+				<p>
+				Mobile App market is extraordinary  area of software development. It is because of the fact that individual is capable to create and develop an outstanding product just by himself.
+				<br>
+				<br>
+				Apps like Vine, Snapchat or Flappy bird are not complicated apps with great and simple idea behind it.
+				<br>
+				<br>
+				I hope that one day one of my hobby project app will go viral.
+				</p>
 			</div>
-			<div class="col-md">			
-					<img  class="screenshot" src="cakeapp/cake_02.png">
+			<div class="col-md-7 offset-md-0">
+				<div class="padding"></div>
+			<div class ="future-third-image-background">	
+				<img src="other_pics/dollars.jpg" alt="Coding" class ="future-third-image"/>
 			</div>
-			<div class="col-md">			
-					<img  class="screenshot" src="cakeapp/cake_03.png">
 			</div>
-			<div class="col-md">			
-					<img  class="screenshot" src="cakeapp/cake_04.png">
-			</div>
-			<div class="col-md">			
-					<img  class="screenshot" src="cakeapp/cake_05.png">
-			</div>
-			<div class="mt-5"></div>
+			
 		</div>
-		</div>
+
+	</div>
 	
 <div class="footer">
 <small>&copy; Copyright 2021, Michal Guspiel</small>
